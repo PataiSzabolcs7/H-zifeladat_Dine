@@ -38,6 +38,10 @@ body{
 .Nav_Hero{
     background-color: #f6f9ff;
 }
+.Nav_Hero_2{
+  background-color: white;
+}
+
 
 /* -----Strips----- */
 @media screen and (min-width: 768px) {
@@ -237,4 +241,190 @@ main .behind {
 }
 .fa-search{
 font-size: 20px;
+}
+
+
+/* -----About us----- */
+
+.About_us{
+  text-align: center;
+}
+.About_us>h1{
+  font-weight: bold;
+}
+#app {
+  padding: 50px 0;
+}
+.timeline {
+  margin: 50px 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+.timeline li {
+  transition: all 200ms ease-in;
+}
+.timestamp {
+  width: 100%; 
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100; 
+}
+.text_date{
+  color: rgba(124, 58, 237, 1);
+  font-weight: bold;
+}
+.status {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 4px solid rgba(124, 58, 237, 1);
+  position: relative;
+  transition: all 200ms ease-in ;
+}
+  
+.status span {
+  padding-top: 20px;
+}
+.status_span2 {
+  font-weight: 100;
+
+}
+.status span:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: rgba(124, 58, 237, 1);
+  border-radius: 25px;
+  border: 2px solid rgba(124, 58, 237, 1);
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 12px); 
+  transition: all 200ms ease-in;
+}
+.swiper-control {
+  text-align: right;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 250px;
+  margin: 50px 0;
+  overflow: hidden;
+  padding: 0 20px 30px 20px;
+}
+.swiper-slide {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+.swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+
+
+/* -----Meet Our Team---- */
+
+.meet_our_team{
+text-align: center;
+}
+.meet_our_team>h1{
+  font-size: 18px;
+}
+
+/* -----Connect---- */
+.connect{
+  background-color: rgba(124, 58, 237, 1);
+  text-align: center;
+  color: white;
+}
+.connect_h1{
+  padding-top: 100px;
+  margin-top: 50px;
+}
+.connect_button{
+  padding-bottom: 100px;
+}
+.connect_button_1{
+  color:rgba(124, 58, 237, 1);
+  background-color: #f5f5f5; ;
+  font-weight: bold;
+  height: 50px;
+}
+
+/* -----Contact---- */
+
+.form-message-height{
+  height:125px
+}
+.contact-background{
+  background-color: rgba(124, 58, 237, 1);
+  color: white;
+  height: 700px;
+  
+  /* Az alsó bal sarkon lévő kör */
+  &::before {
+    z-index: -5000;
+    content: '';
+    position: absolute;
+    width: 490px;
+    /* Állítsd be a kör szélességét */
+    height: 490px;
+    /* Állítsd be a kör magasságát */
+    border-radius: 50%;
+    /* Kerekített szélek kialakítása */
+    background-color: var(--background-color-light);
+    /* Válassz egy kör színt */
+    margin-top: 45px;
+    bottom: -50px;
+    right: 0;
+    left: -350px;
+  }
+
+  /* A felső jobb sarkon lévő kör */
+  &::after {
+    z-index: -5000;
+    content: '';
+    position: absolute;
+    width: 450px;
+    /* Állítsd be a kör szélességét */
+    height: 450px;
+    /* Állítsd be a kör magasságát */
+    border-radius: 50%;
+    /* Kerekített szélek kialakítása */
+    background-color: var(--background-color-light);
+    /* Válassz egy kör színt */
+    top: -70px;
+    right: -300px;
+  }
+
+}
+.contact-socialmedia{
+  padding-top: 150px;
+}
+.contact-socialmedia>p>img{
+ margin-right: 20px;
+}
+.contact-button{
+  height:45px;
+  width:30%;
+}
+
+
+/* -----Privacy---- */
+
+
+
+/* -----Footer---- */
+p>a{
+  text-decoration: none;
+  color:white;
 }
