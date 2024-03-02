@@ -177,7 +177,43 @@ main .behind {
 .feedback>.container{
     position: relative;
 }
-
+.feedback-bold-p{
+  font-weight: bold;
+}
+.feedback-quotesmark-sizing{
+  width: 24px;
+}
+.feedback-text-left{
+  text-align: left;
+}
+.card1{
+  background-color: white;
+  width: 400px;
+  height: 225px;
+  margin: 25px;
+  float: right;
+}
+.card2{
+  background-color: white;
+  width: 525px;
+  height: 300px;
+  margin-bottom: 25px;
+  margin-top:75px ;
+}
+.card3{
+  background-color: white;
+  width: 400px;
+  height: 225px;
+  margin: 5px;
+  margin-bottom: 100px;
+}
+.feedback-title{
+  padding-top: 65px;
+  padding-left: 110px;
+}
+.feedback-title-position{
+  margin-top: 75px;
+}
 
 
 /* -----Search----- */
